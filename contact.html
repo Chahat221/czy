@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Tales of Rags to Riches</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="gallery.html">GALLEY</a></li>
+            <li><a href="contact.html">CONTACT US</a>
+                <ul>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Youtube</a></li>
+                    <li><a href="">Snapchat</a></li>
+                </ul>
+            </li>
+            <li><a href="media.html">MEDIA</a></li>
+        </ul>
+    </nav>
+
+    <section id="outer">
+        <main>
+            <h2>CONTACT US</h2>
+            <section class="contact-form">
+                <form action="" class="">
+                    <section class="row">
+                        <section class="col">
+                          <input type="text" class="form-control" name="fname" placeholder="Given name" aria-label="Given name" required>
+                        </section>
+                        <section class="col">
+                          <input type="text" class="form-control" name="lname" placeholder="Sure name" aria-label="Sure name" required>
+                        </section>
+                    </section>
+
+                    <section class="mb-3">
+                        <label for="exampleFormControlInput2" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput2" name="emailid" placeholder="name@example.com" required>
+                    </section>
+                    <section class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Cell Number</label>
+                        <input type="number" step="5" max="100" min="0" class="form-control" id="exampleFormControlInput1" name="phone" placeholder="XXX-XXX-XXXX" required>
+                    </section>
+                    <section class="mb-3">
+                        <label for="birth-date">Date of Birth</label>
+                        <input type="date" name="birth-date" class="form-control" id="birth-date" required>
+                    </section>
+                    <section class="mb-3">
+                        <label for="exampleFormControlInput3" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleFormControlInput3" name="pass" required>
+                    </section>
+                    <section>
+                        <label for="form-select">Region</label>
+                        <select class="form-select" name="country" aria-label="Default select example" required>
+                            <option selected disabled>Choose Region</option>
+                            <option value="1">North-America</option>
+                            <option value="2">Asia</option>
+                            <option value="3">Australasia</option>
+                          </select>
+                    </section>
+                    <section class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Recommendation</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="Recommendation" rows="3"></textarea>
+                    </section>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </section>
+        </main>
+    
+        <aside>
+            <h2>LINKS</h2>
+            <ul>
+                <li><a href="http://www.google.com/" target="_blank">GOOGLE</a></li>
+                <li><a href="https://x.com/" target="_blank">X</a></li>
+                <li><a href="https://www.cnn.com/" target="_blank">CNN</a></li>
+                <li><a href="https://www.tesla.com/en_ca" target="_blank">TESLA</a></li>
+                <li><a href="https://www.spacex.com/" target="_blank">SpaceX</a></li>
+            </ul>
+        </aside>
+    </section>
+
+    <footer>
+        <p>
+            &copy; 2024, Chahat Gautam
+        </p>
+    </footer>
+</body>
+</html>

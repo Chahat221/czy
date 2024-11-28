@@ -1,0 +1,242 @@
+html{
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+}
+header{
+    background-color: rgb(29, 29, 29);
+    background-image: linear-gradient(to right, rgb(224, 91, 91) 40%, rgb(104, 26, 26));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+header img{
+    height: 100%;
+}
+h1{
+    font-size: 2.5rem;
+    margin-left: 5%;
+}
+h2{
+    font-size: 1.2rem;
+}
+p{
+    font-size: 1rem;
+}
+a{
+    font-size: 1rem;
+}
+table{
+    font-size: 1rem;
+}
+header img{
+    width: 15%;
+}
+header p{
+    font-weight: 700;
+    font-size: xx-large;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    background-color: burlywood(40, 90, 252);
+    height: 40px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+nav{
+    background-color: burlywood;
+    height: 2.5rem;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.3em;
+}
+nav >ul> li{
+    display: inline-block;
+    width: 10rem;
+}
+nav ul li{
+    position: relative;
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    top: 40px;
+    background-color: burlywood;
+    width: 10rem;
+    height: auto;
+}
+nav > ul > li > ul > li > a{
+    width: 10rem;
+}
+nav ul li:hover ul{
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+}
+a:hover{
+    color: white;
+    background-color: brown;
+    width: auto;
+    text-align: center;
+}
+a{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 10%;
+}
+li{
+    list-style: none;
+}
+
+#outer{
+    display: flex;
+    flex-direction: row;
+}
+main{
+    flex-basis: 79%;
+    background-color: wheat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+}
+#nikola-bio{
+    text-align: center;
+}
+#elon{
+    text-align: left;
+}
+#elon-pic{
+    float: left;
+    width: 40%;
+    shape-outside: polygon(0px 0px, 54.91% 2px, 67.07% 6.2%, 76.31% 14.1%, 75.02% 22.57%, 74.21% 29.64%, 74.64% 34.07%, 69.77% 40.15%, 79.16% 47.14%, 96.87% 55.03%, 101.69% 59.03%, 101.76% 74.9%, 102.72% 86.72%, 102.02% 100.26%, 67.25% 100.4%, 0.67% 100.99%);
+}
+table{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    width: 60%;
+}
+table td, table th{
+    height: 35px;
+    gap: 0.3rem;
+}
+table, table tr, table td, table th{
+    border: 2px solid black;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0.5rem;
+}
+.grid-img{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center;
+    width: 100%;
+    border: 2px solid black;
+    margin: 0.5rem;
+}
+.grid-img img{
+    width: 95%;
+}
+.contact-form{
+    width: 65%;
+}
+form{
+    text-align: left;
+}
+.vid-sec{
+    width: 80%;
+    margin: 2rem;
+}
+video{
+    width: 80%;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 20%;
+    padding: 0;
+    font-size: x-large;
+    background-image: url(../img/aside.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    border: 0.1rem solid black;
+    margin-right: 0;
+}
+aside > ul{
+    padding: 0;
+    width: 50%;
+}
+aside > ul > li > a{
+    color: black;
+    font-weight: 700;
+    width: 50%;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgb(224, 91, 91) 20%, rgb(104, 26, 26));
+    color: whitesmoke;
+    height: 50px;
+    font-size: xx-large;
+    text-align: center;
+}
+@media(max-width: 1202px){
+    #outer{
+        display: flex;
+        flex-direction: column;
+    }
+    aside{
+        margin-top: 20px;
+    }
+
+}
+@media(max-width: 900px){
+    html{
+        width: 100%;
+        font-size: 17px;
+    }
+    #elon-pic{
+        width: 45%;
+    }
+    
+}
+@media(max-width: 650px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    html{
+        width: 100%;
+        font-size: 15px;
+    }
+    #elon-pic{
+        width: 50%;
+    }
+}
+@media(max-width: 450px){
+    html{
+        width: 100%;
+        font-size: 8px;
+    }
+}
